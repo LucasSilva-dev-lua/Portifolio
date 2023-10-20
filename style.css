@@ -1,18 +1,162 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #3A6158;
+    --cor2: #52615e;
+    --cor3: #1d9e80;
+    --cor4: #f17e58;
+    --cor5: #E6AE3E;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    background-image: linear-gradient(to right, #7508A8, #AE17F5, #BE30FF);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor2);
     font-size: large;
 }
-h1 {
-    color: #1DF514;
+
+header {
+    background-color: var(--cor3);
+    min-height: 100px;
+    text-align: center;
+    padding: 10px;
 }
-h2 {
-    color: #15C210;
-    font-size: medium;
+
+header > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 2.8em;
+    color: var(--cor5);
+    box-shadow: 1px 1px 1px 2px var(--cor1);
 }
-p {
-    color: whitesmoke;
-    text-align: justify;
+
+nav {
+    background-color: var(--cor3);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > a {
+    color: var(--cor5);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor5);
+}
+
+main {
+    background-color: var(--cor4);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-right: 3px;
+    border-left: 3px;
+    border-bottom: 3px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.446);
+    border-bottom-left-radius: 10px;
+}
+
+article > h2 {
+    text-decoration: overline underline;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+article > h3 {
+    font-size: 22px;
+    text-align: center;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+article > p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+article > a {
+    text-decoration: none;
+    text-align: center;
+}
+
+article > img {
+    width: 180px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+article > ol {
+    text-align: center;
+    list-style: circle;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: relative;
+}
+
+article > ol > h2 {
+    text-decoration: overline underline;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+article > ul {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: relative;
+}
+
+article > ul > h2 {
+    text-decoration: overline underline;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+div.container > a {
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.8vw + 10px);
+}
+
+div.container > a:hover {
+    background-color: var(--cor1);
 }
