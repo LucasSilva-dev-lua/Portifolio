@@ -78,6 +78,7 @@ article > h2 {
     text-align: center;
     border-radius: 5px;
     padding: 10px;
+    position: relative;
 }
 
 article > h3 {
@@ -87,6 +88,7 @@ article > h3 {
     text-align: center;
     border-radius: 5px;
     padding: 10px;
+    position: relative;
 }
 
 article > p {
@@ -100,8 +102,19 @@ article > a {
     text-align: center;
 }
 
+
+article > p > a {
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+
+article > p > a:hover {
+    background-color: var(--cor2);
+}
+
 article > img {
-    width: 180px;
+    width: 250px;
     margin: auto;
     display: flex;
     position: relative;
